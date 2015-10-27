@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href= "reset.css" >
+		<style type="text/css">
+		body {
+			background-color: #F5D76E;
+		}
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color:#fff;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		a:hover {
+			background-color: black;
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		#landing {
+			display: flex;
+			width: 80%
+			height:auto;
+			flex-direction: column;	
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			}
+		h2 {
+			font-size: 3em;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		#landing-message {
+			flex: 1;
+			padding: 20px;
+		}
+
+		#landing-graphic {
+			flex: 1;
+			
+		}
+
+		#landing-graphic img {
+			width: 80%;
+			margin-right: 10%;
+			margin-left: 10%;
+			
+		}
+		#cards {
+			
+			width: auto;
+			
+		}
+
+		#card-container {
+			display: flex;
+			flex-direction: column;
+			justify-content:flex-start;
+			align-items: center;
+			display: flex;
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+			
+			
+
+		}
+
+		.card {
+			margin-top: 20px;
+			background-color: #C0C0C0;
+
+
+
+		}
+
+		.card h2 {
+			font-size: 1.5em;
+			text-align: left;
+			padding: 1%;
+
+
+		}
+
+		.card img {
+			padding: 5%;
+			width: 90%;
+			
+			 
+		}
+
+		.card p {
+			font-family: dosis;
+			font-size: 22px;
+			text-align: left;
+			padding: 5%;
+		}
+
+		footer {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin-top: 1%
+
+		}
+
+		footer img {
+			-webkit-filter:invert(1);
+
+		}
+
+		#facebook {
+			width: 100%;
+		}
+
+		#facebook img {
+			width:100%;
+			
+		}
+
+		#facebook img:hover {
+			-webkit-filter:invert(.5);
+			transition: 2s;
+		}
+		#twitter {
+			width: 100%;
+		}
+
+		#twitter img {
+			width:100%;
+		}
+		#twitter img:hover {
+			-webkit-filter:invert(.5);
+			transition: 2s;
+		}
+		#linkedin {
+			width: 100%;
+		}
+
+		#linkedin img {
+			width:100%;
+		}
+		#linkedin img:hover {
+			width:100%;
+			-webkit-filter:invert(.5);
+			transition: 2s;
+		}
+
+
+
+
+		@media screen and (min-width: 700px){
+			nav{
+				flex-flow: row nowrap;
+				align-items: baseline;
+				justify-content: flex-end;
+				height: auto;
+			/*Code goes here*/
+			}
+			a{
+				flex:1;
+				border: none;
+				text-align: right;
+				font-size: 1.4em;
+
+			/*Code goes here*/
+
+			}
+			#logoNav{
+				flex: 3;
+				text-align: left;
+				font-size: 1.9em;
+			/*Code goes here*/
+			}
+		 	a:hover {
+		 	background-color: initial;
+		 	text-decoration: underline;
+		 }
+		 	#logoNav:hover {
+		 	text-decoration: none;
+
+		 }
+
+		 	#landing {
+		 	flex-direction: row;
+		 	flex-wrap: wrap;
+
+		 }
+
+		 #card-container {
+		 	flex-direction: row;
+		 	flex-wrap: nowrap;
+		 	justify-content: flex-start;
+
+		 }
+		 .card {
+		 	flex: 1;
+		 	margin: 1%;
+		 }
+
+		 footer {
+		 	flex-direction:row;
+		 	flex-wrap:wrap;
+		 	justify-content: flex-end;
+		 }
+
+		 #facebook {
+		 	width: 5%;
+
+		 }
+		 #twitter {
+		 	width:5%;
+
+		 }
+		 #linkedin {
+		 	width: 5%;
+
+		 }
+
+
+
+
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CODE INSTITUTE</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+	<section id = "landing">
+	 <div id="landing-message"><h2>Make Creative Clever Fun Apps. 
+	 Simple.</h2></div>
+	 <div id="landing-graphic"><img id="landing-image" src="img/laptop.png"></div>
+		
+	</section>
+	<section id="card-container">
+		<div class="card">
+			<img src="img/graphic1.png" alt="design pic">
+			<h2>Web info Sessions</h2>
+			<p>If you have questions about your career in ...</p>
+		</div>
+		<div class="card">
+			<img src="img/graphic2.png" alt="design pic">
+			<h2>Web info Sessions</h2>
+			<p>If you have questions about your career in ...</p>
+		</div>
+		<div class="card">
+			<img src="img/graphic3.png" alt="design pic">
+			<h2>Web info Sessions</h2>
+			<p>If you have questions about your career in ...</p>
+		</div>
+	</section>
+
+	<footer>
+		<div id="facebook"><img src="img/facebook.svg"></div>
+		<div id="twitter"><img src="img/twitter.svg"></div>
+		<div id="linkedin"><img src="img/linkedin.svg"></div>
+	</footer>
+
+</body>
+</html>

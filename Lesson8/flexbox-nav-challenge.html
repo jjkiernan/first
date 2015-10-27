@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			background-color: #eee;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: black;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border:1px solid black;
+
+		}
+		a:hover {
+			background-color: white;
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		@media screen and (min-width: 700px){
+			nav{
+				flex-flow: row nowrap;
+				align-items: baseline;
+				justify-content: flex-end;
+				height: auto;
+			/*Code goes here*/
+			}
+			a{
+				flex:1;
+				border: none;
+				text-align: right;
+				font-size: 1.4em;
+
+			/*Code goes here*/
+
+			}
+			#logoNav{
+				flex: 3;
+				text-align: left;
+				font-size: 1.9em;
+			/*Code goes here*/
+			}
+		 a:hover {
+		 	background-color: initial;
+		 	text-decoration: underline;
+		 }
+		 #logoNav:hover {
+		 	text-decoration: none;
+
+		 }
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CODE INSTITUTE</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+	<section>
+		
+	</section>
+
+</body>
+</html>
